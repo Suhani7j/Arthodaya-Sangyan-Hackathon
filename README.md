@@ -115,3 +115,17 @@ See [DEPLOYMENT.md](DEPLOYMENT.md) for GitHub Pages, Netlify, Vercel, and Cloudf
 ## License
 
 MIT License — see [LICENSE](LICENSE)
+
+---
+## References
+
+1. SEBI Investor Education: https://investor.sebi.gov.in/
+2. SEBI F&O Study (FY22-FY24): https://www.sebi.gov.in/sebi_data/attachdocs/sep-2024/1727085659479.pdf
+3. NSDL Investor Awareness: https://nsdl.com/education/investor-awareness
+4. SEBI Finfluencer Guidelines: https://www.sebi.gov.in/sebi_data/meetingfiles/jul-2024/1719916854117_1.pdf
+5. RBI Financial Education: https://www.rbi.org.in/financialeducation/
+6. Cyber Crime Portal: https://cybercrime.gov.in/
+7. Demat Growth (Economic Times): https://economictimes.indiatimes.com/markets/stocks/news/indias-demat-accounts-cross-20-crore-mark-led-by-young-investors-under-30/articleshow/123129245.cms
+8. SEBI Investor Survey 2025: https://www.sebi.gov.in/sebi_data/commondocs/jan-2026/Investor%20Survey%202025%20Main%20Report.pdf
+9. Duolingo Efficacy: https://www.duolingo.com/efficacy/studies
+10. Game-Based Financial Education: https://lirias.kuleuven.be/retrieve/e3d2bcf7-90d9-40c7-8ad9-73cf95e57574
