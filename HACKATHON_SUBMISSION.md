@@ -47,16 +47,6 @@ There is no safe place to practise facing all three at once.
 
 ---
 
-## Demo Script (3 Minutes)
-
-1. **0:00–0:30** — Language screen. Pick **Hindi**. Tap 🔊 to hear the welcome in Hindi.
-2. **0:30–1:00** — Practice Terminal. Tap a **dotted term** (e.g., "Bid", "Spread", "OHLC"). See full form + everyday picture. Place a **limit order**, watch it stay pending.
-3. **1:00–1:45** — "Subah ke 9 Baje", **Intermediate** level. Face the midnight scam, then the 8:45 AM panic. Choose the panic option first, see feedback. Replay with the resilient option.
-4. **1:45–2:30** — Scam Spotter. Read a WhatsApp message. Identify red flags: urgency, guaranteed returns, personal UPI.
-5. **2:30–3:00** — Guide. Paste a suspicious message. Watch it flag red flags and advise safe actions. Close on the guardrails slide.
-
----
-
 ## Team
 
 | Name | Role | Contribution |
