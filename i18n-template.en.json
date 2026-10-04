@@ -1,0 +1,24 @@
+{
+  "_meta": {"language": "en", "reviewed_by": "", "date": ""},
+  "ui": {
+    "listen": "Listen", "next": "Next", "back": "Back", "skip": "Skip", "got_it": "Got it!",
+    "practice_terminal": "Practice terminal", "watchlist": "Practice watchlist", "order_ticket": "Order ticket",
+    "portfolio": "Portfolio", "skill_tree": "Skill tree", "quick_quiz": "Quick quiz",
+    "buy": "Buy", "sell": "Sell", "why": "Why?",
+    "place_buy": "Place practice buy order", "place_sell": "Place practice sell order",
+    "disclaimer": "Practice only. Real market results are unpredictable, and nothing here is advice."
+  },
+  "voice_explainers": {
+    "home": "This is the practice terminal. All prices are random demo numbers, no real money.",
+    "chart": "This chart shows candles. Green closed higher, red closed lower. The orange line is a five candle average.",
+    "watch": "The watchlist shows each stock and its change today. Tap Why to see an invented story.",
+    "ticket": "Choose buy or sell, then market, limit or stop-loss, enter quantity, and place a practice order.",
+    "depth": "Market depth shows buyers on the left and sellers on the right. The gap between them is the spread, a hidden cost.",
+    "port": "Your portfolio shows shares you hold, your average price and profit or loss on paper.",
+    "learn": "This is the skill tree. Finish short lessons from basics to hard. Wrong answers cost a heart.",
+    "nine": "In this game you face a midnight scam and a panic morning. It measures resilience, not profit.",
+    "scam": "Read the message and choose the safest move. Urgency, secrecy and guaranteed returns are red flags.",
+    "quiz": "Choose a level and answer ten questions. Three right in a row multiplies your XP.",
+    "terms": "Each card shows a money term, its full form and meaning. Tap a card for an everyday picture."
+  }
+}
