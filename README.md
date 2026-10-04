@@ -1,44 +1,117 @@
-# Arthodaya — Investor Resilience Simulator
+# Arthodaya
 
-Practice-only money and scam-awareness learning for Bharat, built for the **SANGYAN Investor Resilience Hackathon (SEBI · NSDL · IIT BHU), Track C: Investor Education for Bharat**.
+> **Make your first investing mistakes for free.**
 
-Everything runs in the browser from a single `index.html`. No login, no OTP, no Demat linking, no server-side personal data. Progress lives in `localStorage`.
+A Duolingo-style, language-first safe playground for first-time investors from Tier-2/3 India. Arthodaya teaches investor resilience through consequence-free simulations, not stock tips.
 
-## What is inside
-| Feature | What it does |
-|---|---|
-| **Practice terminal** | Trading-app-style screen with random demo prices, candles, order ticket, depth and virtual ₹1,00,000 wallet. Dotted words open a plain-language glossary card. |
-| **Subah ke 9 Baje** | 3-level market-morning simulator (midnight scam, panic news, follow-up). Scores resilience, never profit. |
-| **Scam spotter** | Adaptive difficulty, 7 realistic scam messages. |
-| **Skill tree and Quiz** | 74 terms, 3 tiers, hearts, streaks, combo XP. |
-| **Arthodaya Guide** | Offline rule-based assistant with a scam-message checker. Optional LLM hook. |
-| **Languages and voice** | Hindi, Tamil, Marathi, Bengali, Telugu, English. A 🔊 button on every section speaks a short explainer in the chosen language. |
+---
 
-## Quick start
+## One-Line Pitch
+
+A safe, practice-only trading-terminal and scam-spotting game that teaches market resilience in six Indian languages. Users choose their preferred language, then safely live through the exact emotional traps that cause real losses: the pre-market WhatsApp panic, opening-bell FOMO, and guaranteed-return scams. Zero real money. Zero stock tips. Zero login.
+
+---
+
+## The Problem
+
+India's retail investor base has exploded: **16+ crore Demat accounts**, with **70%+ of new accounts** coming from non-metro cities. Yet SEBI's own studies show **9 out of 10 individual F&O traders incur net losses**.
+
+The problem is not lack of information. It is **emotional preparation at 8:45 AM**.
+
+- First-time investors from Tier-2/3 cities are intimidated by jargon-heavy broker interfaces
+- They join WhatsApp/Telegram "tips" groups because no one has taught them basic terms in their own language
+- At 8:45 AM, a phone buzzes: "US markets crashed overnight. Sell everything at 9:15." They panic-sell and lock in losses
+- Existing solutions (PDFs, videos, chatbots) are passive. Users have never *felt* the consequences of a bad decision in a safe environment
+
+---
+
+## The Solution
+
+### "Subah ke 9 Baje" — The Flagship Experience
+A time-bound emotional trainer that recreates the exact moments when bad decisions happen:
+1. **8:45 AM** — Phone notifications, WhatsApp panic, countdown timer
+2. **9:00 AM** — Scam messages promising guaranteed returns
+3. **9:15 AM** — Opening bell FOMO, forced decision point
+4. **Feedback** — "More resilient" vs "less resilient," never "correct" vs "wrong"
+
+### Key Features
+
+| Feature | Description |
+|---------|-------------|
+| 🌅 **Subah ke 9 Baje** | Time-bound scenario game measuring emotional resilience, not returns |
+| 🛡️ **Scam Spotter** | Adaptive levels with realistic WhatsApp, SMS, call, and email patterns |
+| 📈 **Practice Terminal** | Real trading-app layout with random demo prices, plain-language glossary on every term |
+| 🧠 **Skill Tree + Quiz** | 74 financial terms, 3 difficulty tiers, streak-based XP |
+| 🗣️ **Voice-First** | Spoken explainers in Hindi, Tamil, Marathi, Bengali, Telugu, English |
+|  **Zero Data Collection** | No login, no OTP, no Demat linking. Everything stays on your device |
+
+---
+
+## Technology
+
+- **Single HTML file** — No build step, no dependencies
+- **74-term glossary** — Pipe-separated: `term | everyday picture | full form | meaning`
+- **6-language i18n** — Hindi, Tamil, Marathi, Bengali, Telugu, English
+- **localStorage persistence** — Progress, XP, streaks, badges, practice wallet
+- **Service Worker** — Offline-capable via `sw.js`
+- **Optional hooks** — Bhashini translation/TTS, custom LLM endpoint (empty by default)
+
+---
+
+## Team
+
+| Name | Role |
+|------|------|
+| Suhani Jadia | Frontend & UI Design |
+| Bhumika Tiwari | Content & Scenario Design |
+| Purva Khanapurkar | Backend & Logic |
+| Arya Salunkhe | Research & Documentation |
+
+---
+
+## Hackathon
+
+**SANGYAN Investor Resilience Hackathon**
+- Main Track: **C — Investor Education for Bharat**
+- Organisers: SEBI, NSDL, Science and Technology Council IIT (BHU) Varanasi
+- Date: 1–4 October 2026
+
+---
+
+## Guardrails
+
+See [GUARDRAILS.md](GUARDRAILS.md) for the full compliance checklist.
+
+Highlights:
+- No buy/sell/hold advice. No price predictions.
+- No broker integration. Wallet is virtual and non-withdrawable.
+- No profit leaderboards. XP rewards learning only.
+- Every outcome screen states that real markets are unpredictable.
+- No login, OTP, or Demat linking. No server-side personal data.
+
+---
+
+## Quick Start
+
 ```bash
-git clone https://github.com/<your-user>/arthodaya.git
+# Clone the repo
+git clone <your-repo-url>
 cd arthodaya
-npm start        # serves on http://localhost:3000  (or just open index.html)
-npm test         # syntax + guardrail checks
-```
-Deploy: GitHub Pages straight from the `main` branch (see [DEPLOYMENT.md](DEPLOYMENT.md)).
 
-## Repo map (all files sit in one folder)
-```
-index.html            the whole app (HTML + CSS + JS + term data)
-manifest.webmanifest  PWA manifest
-sw.js                 offline cache for the app shell
-icon.svg              app icon
-check.js              dependency-free checks (npm test)
-i18n-template.en.json translation template
-ARCHITECTURE.md · TRANSLATION.md · DEPLOYMENT.md · GUARDRAILS.md · HACKATHON_SUBMISSION.md
+# Open directly in browser
+open index.html
+
+# Or serve locally
+python -m http.server 8080
+# Then visit http://localhost:8080
 ```
 
-## Guardrails (non-negotiable)
-No stock tips or buy/sell/hold advice. No broker integration. No profit leaderboards: XP and streaks reward learning only. Every outcome screen says real markets are unpredictable. See [GUARDRAILS.md](GUARDRAILS.md).
+## Deployment
 
-## Docs
-[Architecture](ARCHITECTURE.md) · [Translation guide](TRANSLATION.md) · [Deployment](DEPLOYMENT.md) · [Guardrails](GUARDRAILS.md) · [Hackathon submission](HACKATHON_SUBMISSION.md) · [Contributing](CONTRIBUTING.md)
+See [DEPLOYMENT.md](DEPLOYMENT.md) for GitHub Pages, Netlify, Vercel, and Cloudflare Pages instructions.
+
+---
 
 ## License
-MIT. All prices, stories and scam messages are invented for teaching. This is not investment advice.
+
+MIT License — see [LICENSE](LICENSE)
